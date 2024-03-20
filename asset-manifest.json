@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DigitaLIT/static/css/main.068253ac.css",
-    "main.js": "/DigitaLIT/static/js/main.71b4a30a.js",
+    "main.css": "/DigitaLIT/static/css/main.7b54eca1.css",
+    "main.js": "/DigitaLIT/static/js/main.93917c80.js",
     "static/js/453.8a0b6854.chunk.js": "/DigitaLIT/static/js/453.8a0b6854.chunk.js",
     "static/media/book2example.jpg": "/DigitaLIT/static/media/book2example.cfd890bb6eb593b7b20a.jpg",
     "static/media/matrix-bg.jpg": "/DigitaLIT/static/media/matrix-bg.76a93530ac71ed29f8fc.jpg",
@@ -10,12 +10,12 @@
     "static/media/book4example.jpg": "/DigitaLIT/static/media/book4example.8e4abd500aadafa8e84f.jpg",
     "static/media/profileDefault.png": "/DigitaLIT/static/media/profileDefault.a6143582309785dca610.png",
     "index.html": "/DigitaLIT/index.html",
-    "main.068253ac.css.map": "/DigitaLIT/static/css/main.068253ac.css.map",
-    "main.71b4a30a.js.map": "/DigitaLIT/static/js/main.71b4a30a.js.map",
+    "main.7b54eca1.css.map": "/DigitaLIT/static/css/main.7b54eca1.css.map",
+    "main.93917c80.js.map": "/DigitaLIT/static/js/main.93917c80.js.map",
     "453.8a0b6854.chunk.js.map": "/DigitaLIT/static/js/453.8a0b6854.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.068253ac.css",
-    "static/js/main.71b4a30a.js"
+    "static/css/main.7b54eca1.css",
+    "static/js/main.93917c80.js"
   ]
 }
