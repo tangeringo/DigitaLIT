@@ -10,16 +10,17 @@ interface NavBarProps {
   imageSrcPath: string;
   navItems: string[];
   linkUrlPages: string[];
+  setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
 }
 
 
-function NavBar({ brandName, imageSrcPath, navItems, linkUrlPages }: NavBarProps) {
+function NavBar({ brandName, imageSrcPath, navItems, linkUrlPages, setSearchTerm }: NavBarProps) {
 
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const urlRouteAfterSlash = window.location.href.split("/")[3];
 
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark shadow navbar-default navbar-fixed-top" style={{position: "fixed", width: "100%", zIndex: 1}}>
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark shadow" style={{position: "fixed", top: 0, width: "100%", zIndex: 1}}>
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img
@@ -66,6 +67,7 @@ function NavBar({ brandName, imageSrcPath, navItems, linkUrlPages }: NavBarProps
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
+                  onChange={(event) => setSearchTerm(event.target.value)}
                 />
                 <button className="btn btn-outline-success" type="submit"> Search </button>
             </form>

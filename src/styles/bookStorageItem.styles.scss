@@ -5,7 +5,7 @@
     height: 500px;
     align-items: center;
     position: relative;
-    margin: 15% auto;
+    margin: 7% auto 0;
 
     
     .image {
@@ -63,7 +63,7 @@
       .name {
         width: 90%;
         display: flex;
-        justify-content: center;
+        text-align: center;
         font-weight: bold;
         letter-spacing: 1px;
       }

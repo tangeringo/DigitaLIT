@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavBar from "./components/navbar.tsx";
 import { Routes, Route } from 'react-router-dom';
 import appLogoImage from "./assets/AppLogo/matrix-bg.jpg";
+import { bookData } from './data/dummyData.js';
 
 // FONT AWESOME ICONS
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -23,18 +24,22 @@ import BottomNavBar from './components/bottomNavBar.js';
 library.add(fab);
 
 function App() {
-  let items = ["Login", "Create Account", "Profile", "My Books", "Library"];
-  let linkUrlPages = ["/home", "/login", "/create-account", "/profile", "/my-books", "/library"]
+  let items = ["Login", "Profile", "My Books", "Library"];
+  let linkUrlPages = ["/home", "/login", "/profile", "/my-books", "/library"];
+  const [searchTerm, setSearchTerm] = useState("");
+  const filteredBooks = bookData.filter(book => book.name.toLowerCase().includes(searchTerm.toLowerCase()));
+  
+
   return (
     <div>
-      <NavBar brandName={"DigitaLIT"} imageSrcPath={appLogoImage} navItems={items} linkUrlPages={linkUrlPages}/>
+      <NavBar brandName={"DigitaLIT"} imageSrcPath={appLogoImage} navItems={items} linkUrlPages={linkUrlPages} setSearchTerm={setSearchTerm}/>
       <Routes>
           <Route index path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/create-account" element={<CreateAccountPage />} />
+          <Route path="/create-account" element={<CreateAccountPage />} />   {/* redirect from login ONLY */}
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/my-books" element={<MyBooks />} />
-          <Route path="/library" element={<Library />} />
+          <Route path="/library" element={<Library filteredBooks={filteredBooks}/>} />
           <Route path="/checkout" element={<CheckoutPage />} />     {/* redirect somewahare in the code dinamically */}
       </Routes>
       <BottomNavBar />
@@ -43,3 +48,10 @@ function App() {
   );
 }
 export default App;
+
+
+// 1.) checkout screen 
+// 2.) profile screen (frontend done) -- add javascript and display info
+// 3.1.) display book info screen      /display-book-info/{book-id}
+// 3.2.) pdf preview screen (javascript edditing - template)  /book-pdf-view/{book-id}
+// 4.) forgot + reset password screens
