@@ -19,6 +19,7 @@ import CreateAccountPage from './pages/CreateAccountPage.js';
 import HomePage from './pages/HomePage.js';
 import Library from './pages/LibraryPage.js';
 import BottomNavBar from './components/bottomNavBar.js';
+import ForgotPasswordPage from './pages/ForgotPasswordPage.js';
 
 
 library.add(fab);
@@ -36,6 +37,7 @@ function App() {
       <Routes>
           <Route index path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/create-account" element={<CreateAccountPage />} />   {/* redirect from login ONLY */}
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/my-books" element={<MyBooks />} />

@@ -40,17 +40,16 @@ function LoginPage() {
             <form>
               <input onChange={(event) => setEmail(event.target.value)} type='email' placeholder='Enter your email' />
               <input onChange={(event) => setPassword(event.target.value)} type='password' placeholder='Enter your password' />
+              <button className="login-button">Log In</button>
+            </form>
+            <div className="bottom" >
               <div className="remember" >
-                <input id='checkbox' type='checkbox' />
+                <input style={{marginBottom: 13}} id='checkbox' type='checkbox' />
                 <label for='checkbox' >
                   <p>Remember Me</p>
                 </label>
               </div>
-              <button className="login-button">Log In</button>
-            </form>
-            <div className="bottom" >
-              <p>Forgot your password?</p>
-              <a href="/" >Reset Password</a>
+              <Link to="/forgot-password"><p>Forgot password?</p></Link>
             </div>
             <Link to="/create-account" className="create">Create Account</Link>
           </div>

@@ -2,8 +2,8 @@ import React from 'react';
 import "../styles/bookStorageItem.styles.scss";
 
 
-function BookStorageItem({ item }) {
-    const { imgSource, name } = item;
+function BookStorageItem({ item, buttonClicked, setButtonClicked }) {
+    const { id, imgSource, name } = item;
     return (
         <div className='collection-item'>
             <div className='image' style={{ backgroundImage: `url(${imgSource})` }}>
@@ -12,7 +12,11 @@ function BookStorageItem({ item }) {
                 <span className='name'> {name} </span>
                 {/* <h4 className='price'> {"$35"} </h4> */}
             </div>
-            <button onClick={() => console.log("more info")} className='cart-item-button' inverted> More Info </button>
+            <button onClick={() => {
+                !buttonClicked.isCLicked?
+                    setButtonClicked({ id: id, isCLicked: true })
+                    :setButtonClicked({ id: id, isCLicked: false })
+            }} className='cart-item-button' inverted> More Info </button>
         </div>
     );
 }

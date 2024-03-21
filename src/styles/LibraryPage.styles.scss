@@ -1,0 +1,52 @@
+.base-scroll-section-pannel {
+    display: "flex"; 
+    width: "23%"; 
+    height: "75%"; 
+    background-color: "black"; 
+    position: "fixed"; 
+    top: 90; 
+  }
+
+
+@keyframes rightBookPanelScroll {
+    from {transform: translateX(100%) }
+    to {transform: translateX(10%);}
+  }
+
+  .horizontal-book-scroll-left {
+    animation-name: rightBookPanelScroll;
+    animation-duration: 2s;
+    // animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    display: "flex"; 
+    width: "23%"; 
+    height: "75%"; 
+    background-color: "black"; 
+    position: "fixed"; 
+    top: 90; 
+    right: -23%;
+  }
+
+
+  @keyframes leftBookPanelScroll {
+    from {transform: translateX(10%) }
+    to {transform: translateX(100%)}
+  }
+
+  .horizontal-book-scroll-left {
+    animation-name: leftBookPanelScroll;
+    animation-duration: 2s;
+    // animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    display: "flex"; 
+    width: "23%"; 
+    height: "75%"; 
+    background-color: "black"; 
+    position: "fixed"; 
+    top: 90; 
+    right: 0;
+    
+    // @extend .base-scroll-section-pannel;
+  }
