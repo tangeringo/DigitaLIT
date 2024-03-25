@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/DigitaLIT/static/css/main.e1d93c8d.css",
-    "main.js": "/DigitaLIT/static/js/main.6413faa0.js",
+    "main.css": "/DigitaLIT/static/css/main.410d1174.css",
+    "main.js": "/DigitaLIT/static/js/main.7b804d13.js",
     "static/js/453.8a0b6854.chunk.js": "/DigitaLIT/static/js/453.8a0b6854.chunk.js",
     "static/media/book2example.jpg": "/DigitaLIT/static/media/book2example.cfd890bb6eb593b7b20a.jpg",
     "static/media/matrix-bg.jpg": "/DigitaLIT/static/media/matrix-bg.76a93530ac71ed29f8fc.jpg",
     "static/media/book3example.jpg": "/DigitaLIT/static/media/book3example.0383ca0ecbf533e48d55.jpg",
+    "static/media/pdf.worker.min.js": "/DigitaLIT/static/media/pdf.worker.min.f52e8409825af38c8495.js",
     "static/media/book1example.jpg": "/DigitaLIT/static/media/book1example.9241d5be1d3fc0fe0f53.jpg",
     "static/media/book4example.jpg": "/DigitaLIT/static/media/book4example.8e4abd500aadafa8e84f.jpg",
+    "static/media/sample.pdf": "/DigitaLIT/static/media/sample.15d1f558393ef5f9c7fd.pdf",
     "static/media/profileDefault.png": "/DigitaLIT/static/media/profileDefault.a6143582309785dca610.png",
     "index.html": "/DigitaLIT/index.html",
-    "main.e1d93c8d.css.map": "/DigitaLIT/static/css/main.e1d93c8d.css.map",
-    "main.6413faa0.js.map": "/DigitaLIT/static/js/main.6413faa0.js.map",
+    "main.410d1174.css.map": "/DigitaLIT/static/css/main.410d1174.css.map",
+    "main.7b804d13.js.map": "/DigitaLIT/static/js/main.7b804d13.js.map",
     "453.8a0b6854.chunk.js.map": "/DigitaLIT/static/js/453.8a0b6854.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1d93c8d.css",
-    "static/js/main.6413faa0.js"
+    "static/css/main.410d1174.css",
+    "static/js/main.7b804d13.js"
   ]
 }
