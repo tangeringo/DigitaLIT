@@ -49,7 +49,7 @@ function LoginPage() {
                   <p>Remember Me</p>
                 </label>
               </div>
-              <Link to="/forgot-password"><p>Forgot password?</p></Link>
+              <Link to="/reset-password"><p>Reset password</p></Link>
             </div>
             <Link to="/create-account" className="create">Create Account</Link>
           </div>
