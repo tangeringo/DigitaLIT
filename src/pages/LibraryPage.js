@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 
 import { connect } from 'react-redux';
 import { selectLibrarySelectedBook } from '../redux/library/librarySelector.js';
+import { createStructuredSelector } from 'reselect';
 
 import BookStorageItem from '../components/bookStorageItem.js';
 import '../styles/LibraryPage.styles.scss';
-import { createStructuredSelector } from 'reselect';
 
 
 function Library({ filteredBooks, selectedBook }) {
     const [buttonClicked, setButtonClicked] = useState({id: 0, showBook: false});
-    // console.log("selectedBook: ", selectedBook);
 
     return (
         <div style={{display: "flex"}}>
@@ -34,7 +33,3 @@ const mapStateToProps = createStructuredSelector({
 })
 
 export default connect(mapStateToProps)(Library);
-
-
-
-// funguje celkom fajn, ale oprav bordel

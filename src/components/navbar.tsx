@@ -18,6 +18,7 @@ function NavBar({ brandName, imageSrcPath, navItems, linkUrlPages, setSearchTerm
 
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const urlRouteAfterSlash = window.location.href.split("/")[3];
+  console.log("urlRouteAfterSlash: ", urlRouteAfterSlash)
 
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark shadow" style={{position: "fixed", top: 0, width: "100%", zIndex: 1}}>

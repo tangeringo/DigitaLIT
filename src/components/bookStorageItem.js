@@ -35,8 +35,7 @@ function BookStorageItem({ item, buttonName, buttonClicked, setButtonClicked }) 
 
     return (
         <div className='collection-item' style={buttonName === "Add to cart"? {marginTop: "80px", width: "80%", height: "70%"}: {}}>
-            <div className='image' style={{ backgroundImage: `url(${imgSource})` }}>
-            </div>
+            <div className='image' style={{ backgroundImage: `url(${imgSource})` }}></div>
             <div className='item-description'>
                 <span>name: <span className='name'>{name}</span></span>
                 {buttonName !== "Show Book"?

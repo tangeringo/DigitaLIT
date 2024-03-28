@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faLock, faCheckSquare } from '@fortawesome/fontawesome-free-solid'
-import { PageTitle, ResetPasswordCotntainer, PasswordInput, ProgresBarStatusText, ProgresBar, ResetPasswordButton } from '../styles/styled-components/ResetPasswordPage.styles.';
+import { PageTitle, ResetPasswordCotntainer, PasswordInput, ProgresBarStatusText, ProgresBar, SubmitButton } from '../styles/styled-components/ResetPasswordPage.styles.';
 
 
 function ResetPasswordPage() {
@@ -35,7 +35,7 @@ function ResetPasswordPage() {
             </div>
             <ProgresBarStatusText>strength: {passwordStrength[strengthCounter]}</ProgresBarStatusText>
             <ProgresBar passwordLength={newPassword.length}></ProgresBar>
-            <ResetPasswordButton onClick={() => {console.log("Reset Password")}}>Reset Password:</ResetPasswordButton>
+            <SubmitButton onClick={() => {console.log("Reset Password")}}>Reset Password:</SubmitButton>
         </ResetPasswordCotntainer>
     );
 }

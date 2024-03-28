@@ -1,0 +1,21 @@
+.input-section-container{
+    margin: 0 5px;
+}
+
+.credit-card-container {
+    background-color: burlywood;
+    width: fit-content;
+    height: fit-content;
+    border: 8px solid black;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+input[type=text] {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid #808080;
+    color: #fff;
+  }

@@ -2,7 +2,7 @@ import { LibraryTypes } from "./libraryTypes";
 import { updateSelectedBookItemInfo } from "./libraryUtils";
 
 const INITIAL_STATE = {
-    selectedBook: {id: 0, imgSource: "", name: "", price: 0, description: ""}
+    selectedBook: {id: 0, imgSource: "", name: "", quantity: 1, price: 0, description: ""},
 }
 
 
@@ -13,6 +13,7 @@ const libraryReducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 selectedBook: updateSelectedBookItemInfo(state.selectedBook, action.payload)
             }
+        
         default:
             return state;
     }

@@ -52,7 +52,7 @@ function App() {
           <Route path="/my-books" element={<MyBooks />} />
           <Route path="/display-book-info" element={<DisplayBookInfoPage />} />
           <Route path="/library" element={<Library filteredBooks={filteredBooks}/>} />
-          <Route path="/checkout" element={<CheckoutPage />} />     {/* redirect somewahare in the code dinamically */}
+          <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
       <BottomNavBar />
 

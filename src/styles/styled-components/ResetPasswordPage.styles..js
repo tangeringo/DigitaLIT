@@ -61,7 +61,7 @@ export const ProgresBar = styled.div`
     ${getProgressBarStyles}
 `;
 
-export const ResetPasswordButton = styled.button`
+export const SubmitButton = styled.button`
     background-color: #808080;
     border: 1px solid #808080;
     color: #fff;
